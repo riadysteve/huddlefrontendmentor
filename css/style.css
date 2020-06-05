@@ -1,0 +1,135 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: #674baf;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@media screen and (min-width: 599px) {
+  body {
+    height: 100vh;
+  }
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background: url("/images/bg-mobile.svg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media screen and (min-width: 599px) {
+  header {
+    height: 100vh;
+  }
+}
+
+nav {
+  padding: 50px 0;
+  margin-right: auto;
+}
+@media screen and (min-width: 599px) {
+  nav {
+    padding: 30px 0 50px 0;
+  }
+}
+nav .logo img {
+  width: 200px;
+}
+
+.hero-grid {
+  display: grid;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 599px) {
+  .hero-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr auto;
+    gap: 2rem;
+    text-align: left;
+  }
+}
+.hero-grid img {
+  width: 100%;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 599px) {
+  .hero-grid img {
+    margin-bottom: 0;
+  }
+}
+.hero-grid .hero-content h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+@media screen and (min-width: 599px) {
+  .hero-grid .hero-content h1 {
+    width: 80%;
+  }
+}
+.hero-grid .hero-content p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 2;
+  color: #ddd;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 599px) {
+  .hero-grid .hero-content p {
+    line-height: 1.6;
+  }
+}
+.hero-grid .hero-content a.btn-primary {
+  color: #674baf;
+  background-color: #fff;
+  padding: 15px 80px;
+  border-radius: 40px;
+  font-weight: 700;
+}
+
+.social-media-bottom {
+  display: flex;
+  justify-content: flex-end;
+}
+.social-media-bottom div {
+  position: relative;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 15px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.social-media-bottom div svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.social-media-bottom div:last-child {
+  margin-right: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
