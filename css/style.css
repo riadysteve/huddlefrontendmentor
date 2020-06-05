@@ -112,7 +112,14 @@ nav .logo img {
 
 .social-media-bottom {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  margin: 100px 0 50px 0;
+}
+@media screen and (min-width: 599px) {
+  .social-media-bottom {
+    justify-content: flex-end;
+    margin: 0;
+  }
 }
 .social-media-bottom div {
   position: relative;
